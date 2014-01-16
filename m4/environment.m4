@@ -9,6 +9,7 @@ AC_DEFUN([ENVIRONMENT],
 	fi
 	if test "${FINTP_HOME}" = ""; then
 		FINTP_HOME="$(cd ..;pwd)"
+		AC_SUBST(FINTP_HOME)
 		AC_MSG_WARN([FINTP_HOME variable not set. Assuming FINTP_HOME is ${FINTP_HOME}])
 	fi
 ])
