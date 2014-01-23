@@ -209,9 +209,9 @@ string XmlUtil::getNamespace( const XERCES_CPP_NAMESPACE_QUALIFIER DOMDocument* 
 	if( docElem->getNamespaceURI() != NULL )
 		ns = localForm( docElem->getNamespaceURI() );
 #else
-	if( ( docElem->getNamespaceURI() == NULL ) && ( docElem->getTypeInfo() == NULL ) )
+	if ( docElem->getNamespaceURI() == NULL )
 	{
-		if( docElem->getTypeInfo()->getNamespace() != NULL )
+		if ( docElem->getTypeInfo() != NULL && docElem->getTypeInfo()->getNamespace() != NULL )
 			ns = localForm( docElem->getTypeInfo()->getNamespace() );
 	}
 	else
