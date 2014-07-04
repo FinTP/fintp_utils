@@ -12,7 +12,7 @@ AC_MSG_CHECKING(for ZipArchive)
 	ZIP_CPPFLAGS="-I${ZIP_HOME}"
 	ZIP_LDFLAGS="-L${ZIP_HOME}"
  else
-	ZIP_CPPFLAGS="-I/usr/include/ZipArchive -I/usr/local/ZipArchive/ZipArchive -I/usr/local/ZipArchive"
+	ZIP_CPPFLAGS="-I/usr/include/ZipArchive -I/usr/include/ziparchive -I/usr/local/ZipArchive/ZipArchive -I/usr/local/ZipArchive"
 	ZIP_LDFLAGS="-L/usr/local/ZipArchive/ZipArchive -L/usr/local/ZipArchive"
  fi
 
