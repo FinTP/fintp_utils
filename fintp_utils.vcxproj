@@ -46,7 +46,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>DEBUG_ENABLED;_DEBUG;RTTI;WIN32;_UTILSDLL;CRT_SECURE</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;DEBUG_ENABLED;_DEBUG;RTTI;WIN32;_UTILSDLL;CRT_SECURE</PreprocessorDefinitions>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
